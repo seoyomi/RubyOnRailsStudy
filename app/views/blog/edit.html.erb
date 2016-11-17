@@ -1,0 +1,8 @@
+<h1>Edit</h1>
+edit post <%=@post.id%>
+<form action="/blog/update">
+	<input type="hidden" name="id" value="<%=@post.id%>">
+	<input type="text" name="name" placeholder="작성자" value="<%=@post.writer%>"> <br>
+	<textarea name="content"><%=@post.content%></textarea><br>
+	<input type="submit">
+</form>
